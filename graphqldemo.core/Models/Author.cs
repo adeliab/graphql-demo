@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace graphqldemo.core
+namespace graphqldemo.core.Models
 {
 	public class Author
 	{

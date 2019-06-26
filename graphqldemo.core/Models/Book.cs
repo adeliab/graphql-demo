@@ -1,4 +1,4 @@
-﻿namespace graphqldemo.core
+﻿namespace graphqldemo.core.Models
 {
 	public class Book
 	{
