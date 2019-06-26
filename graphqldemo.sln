@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29009.5
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "graphqldemo.webapi", "graphqldemo.webapi\graphqldemo.webapi.csproj", "{F61FAECE-8648-4370-9BF1-128CD5E8EC93}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "graphqldemo.core", "graphqldemo.core\graphqldemo.core.csproj", "{34FB7DE7-058F-4E7A-8D30-81ACD1FA05D8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F61FAECE-8648-4370-9BF1-128CD5E8EC93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F61FAECE-8648-4370-9BF1-128CD5E8EC93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F61FAECE-8648-4370-9BF1-128CD5E8EC93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F61FAECE-8648-4370-9BF1-128CD5E8EC93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34FB7DE7-058F-4E7A-8D30-81ACD1FA05D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34FB7DE7-058F-4E7A-8D30-81ACD1FA05D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34FB7DE7-058F-4E7A-8D30-81ACD1FA05D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34FB7DE7-058F-4E7A-8D30-81ACD1FA05D8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BF7B2EA6-8801-40FD-AAA5-FBC14D183EBB}
+	EndGlobalSection
+EndGlobal
