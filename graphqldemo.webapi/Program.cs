@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using graphqldemo.mock;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
 namespace graphqldemo.webapi
@@ -14,7 +16,14 @@ namespace graphqldemo.webapi
 	{
 		public static void Main(string[] args)
 		{
-			CreateWebHostBuilder(args).Build().Run();
+			IWebHost host = CreateWebHostBuilder(args).Build();
+
+			using (IServiceScope scope = host.Services.CreateScope())
+			{
+				ApplicationDbContextSeed.Initialize(scope);
+			}
+
+			host.Run();
 		}
 
 		public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
